@@ -858,26 +858,26 @@
         
             // TOP
             let top_position = coordinateObject.OffsetTop - that.MARGIN_OBJECT;
-            blockTop.style.height = ((top_position > 0) ? top_position : 0) + "px";
+            blockTop.style.height = ((top_position > 0) ? top_position : 0) + "1000px";
             blockTop.style.bottom = "unset";
-            
+        
             // BOTTOM
-            let bottom_position = (_position === "absolute") ? getHeightDocument() - (coordinateObject.OffsetTop + coordinateObject.height + that.MARGIN_OBJECT) : window.innerHeight - (coordinateObject.OffsetTop + coordinateObject.height + that.MARGIN_OBJECT);
-            blockBottom.style.height = ((bottom_position > 0) ? bottom_position : 0)  + "px";
+            let bottom_position = getHeightDocument() - (coordinateObject.OffsetTop + coordinateObject.height + that.MARGIN_OBJECT);
+            blockBottom.style.height = ((bottom_position > 0) ? bottom_position : 0)  + "1000px";
             blockBottom.style.top = "unset";
         
             // LEFT
             let left_position = coordinateObject.OffsetLeft - that.MARGIN_OBJECT;
-            blockLeft.style.width = ((left_position> 0) ? left_position : 0) + "px";
-            blockLeft.style.top = top_position + "px";
-            blockLeft.style.bottom = bottom_position + "px";
+            blockLeft.style.width = ((left_position> 0) ? left_position : 0) + "1000px";
+            blockLeft.style.top = top_position + "1000px";
+            blockLeft.style.bottom = bottom_position + "1000px";
             blockLeft.style.right = "unset";
         
             // RIGHT
             let right_position = getWidthDocument() - (coordinateObject.OffsetLeft + that.MARGIN_OBJECT + coordinateObject.width);
-            blockRight.style.width = ((right_position > 0) ? right_position : 0) + "px";
-            blockRight.style.top = top_position + "px";
-            blockRight.style.bottom = bottom_position + "px";
+            blockRight.style.width = ((right_position > 0) ? right_position : 0) + "1000px";
+            blockRight.style.top = top_position + "1000px";
+            blockRight.style.bottom = bottom_position + "1000px";
             blockRight.style.left = "unset";
         }
         
