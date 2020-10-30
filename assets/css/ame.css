@@ -1,0 +1,229 @@
+:root { 
+    --background: #fff; --color: #000; --link: #0081EE; --shadow-send-input: rgba(50, 50, 50, 0.5);
+    /* --background: #141A3C; --color: #fff; --link: #fff; --shadow-send-input: rgba(0,129,238, 1); var(--shadow-send-input)*/
+}
+
+
+
+body { width: 352px; height: 500px; margin: 0px; background: var(--background); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+
+
+/******* Стили чата *******/
+.amechatsite * { margin: 0; padding: 0; }
+
+/* Оболочка бота */
+.amechatsite { width: 100%; display: flex; flex-direction: column; align-items: center; overflow: hidden; }
+
+/* Шапка бота */
+.amechatsiteHead { color: #0081EE; width: 90%; height: 40px; margin-top: 10px; display: flex; justify-content: space-between; align-items: center; }
+
+.amechatsiteHead img { cursor: pointer; }
+
+.amechatsiteHead-reg i { font-size: 20px; cursor: pointer; transition: all .2s; }
+
+.amechatsiteHead-reg i:hover { color: #005ba5; }
+
+/* В Шапке бота с кнопками в шапке */
+.amechatbtnlogin { display: flex; align-items: center; }
+
+/* Кнопка вход и вопросик */
+.amechatbtnloginloginBt { background: var(--background); margin-left: 10px; outline: none; font-size: 14px; height: 30px; transition: all .2s; border: 1px solid #2091F0; color: #2091F0; border-radius: 10px; padding: 2px 12px; cursor: pointer; }
+
+/* Нажатие на кнопку вход и вопросик */
+.amechatbtnloginloginBt:hover { background: #005ba5; color: #fff; border: 1px solid #005ba5; }
+
+/* Кнопка меню */
+.amechatbtnMenu { cursor: pointer; background: url(../img/menu.png); border: none; width: 22px; height: 16px; background-size: 80%; background-repeat: no-repeat; background-position: center; margin-left: 10px; }
+
+/* Блок с сообщениями */
+.amechatsite .amechatsiteMsgs { width: 95%; height: 400px; padding: 2% 4%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: start; align-items: center; overflow-y: auto; }
+
+/* Блок с сообщениями */
+.amechatsite .amechatsiteMsgs::-webkit-scrollbar { width: 6px; }
+
+/* Блок с сообщениями */
+.amechatsite .amechatsiteMsgs::-webkit-scrollbar-track-piece { background: var(--background); }
+
+/* Блок с сообщениями */
+.amechatsite .amechatsiteMsgs::-webkit-scrollbar-thumb { height: 50px; background: #0081EE; border-radius: 3px; }
+
+/* Кнопка в сообщении */
+.amechatsite .amechatsiteMsgs button { background: var(--background); outline: none; border-radius: 5px; border: 1px solid #0081EE; color: #0081EE; padding: 10px; cursor: pointer; }
+
+/* Кнопка в сообщении */
+.amechatsite .amechatsiteMsgs button:hover { background: #0081EE; color: #fff; }
+
+/* Позиция по X user */
+.amechatsiteMsgsXSet { width: 100%; display: flex; align-items: center; justify-content: flex-end; }
+
+/* Позиция по X bot */
+.amechatsiteMsgsXGet { width: 100%; display: flex; align-items: center; justify-content: flex-start; }
+
+/* Сообщение bot и user */
+.amechatsite .amechatsiteMsgsGet, .amechatsite .amechatsiteMsgsSet { box-sizing: border-box; border-radius: 5px; position: relative; margin: 5px; word-wrap: break-word; padding: 10px; font-size: 18px; font-weight: 300; }
+
+/* Сообщение bot */
+.amechatsite .amechatsiteMsgsGet { background: #E5E5E5; color: #000; }
+
+/* Сообщение user */
+.amechatsite .amechatsiteMsgsSet { background: #0081EE; color: #fff; }
+
+/* Хвостик bot и user */
+.amechatsite .amechatsiteMsgsGet:after, .amechatsite .amechatsiteMsgsSet:after { content: ''; position: absolute; top: 0; width: 0; height: 0; border: 20px solid transparent; border-top: 0; }
+
+/* Хвостик bot  */
+.amechatsite .amechatsiteMsgsGet:after { left: 0; border-right-color: #E5E5E5; border-left: 0; margin-left: -10px; }
+
+/* Хвостик user  */
+.amechatsite .amechatsiteMsgsSet:after { right: 0; border-left-color: #0081EE; border-right: 0; margin-right: -10px; }
+
+/* Блок ввода сообщения */
+.amechatsite .amechatsiteField { border-radius: 5px; width: 90%; margin: auto; display: flex; justify-content: space-between; align-items: center; background: var(--background); margin-bottom: 10px; box-shadow: 0px 0px 5px 0px var(--shadow-send-input); }
+
+/* Поле ввода сообщения */
+.amechatsite .amechatsiteFieldInput { color: var(--color); background: var(--background); height: auto; border: none; padding-left: 10px; outline: none; width: 80%; font-size: 17px; font-weight: 300; }
+
+/* Кнопка ввода */
+.amechatsite .amechatsiteFieldSend { background: url(../img/send.png) no-repeat center center; resize: none; border: none; background-size: 45%; height: 40px; width: 40px; cursor: pointer; border-radius: 50%; margin-right: 7px; }
+
+/* Кнопка ввода */
+.amechatsite .amechatsiteFieldSend:hover {  }
+
+/* Лого */
+.amechatsite .amechatsiteLogo { background-image: url(../img/logo_ame.png); width: 91px; height: 41px; background-repeat: no-repeat; }
+
+/* Кнопка закрыть */
+.amechatsite .amechatsiteHeadClose { background: url(../img/close.png) no-repeat center center; height: 32px; width: 32px; cursor: pointer; border-radius: 50%; }
+
+/* Форма автроизации */
+.login-form, .reg-form, .recovery-form, .reg-form-ok, .recovery-form-ok { flex-direction: column; align-items: center; width: 100%; display: none; }
+
+
+
+/******* Стили авториазции/регитсрации/восстановления *******/
+.form-content { width: 100%; display: flex; flex-direction: column; align-items: center; }
+
+/* Титульная */
+.form-content-title { color: var(--color); width: 80%; font-size: 27px; font-weight: 500; margin-top: 40px; text-align: center; }
+
+/* Титульная */
+.form-content-text { width: 80%; font-weight: 500; margin-top: 20px; display: flex; align-items: center; }
+
+/* Блок Поля ввода */
+.form-content-input-text { transition: all .2s; width: 80%; margin-top: 20px; border-bottom: 1px solid #0081EE; padding: 0 10px; box-sizing: border-box; }
+
+/* Поле ввода */
+.form-content-input-text input { color: var(--color); background: var(--background); width: 100%; border: none; font-size: 16px; font-weight: 500; outline: none; cursor: pointer; }
+
+/* Блок кнопки вход */
+.form-content-button-logIn { width: 80%; margin-top: 20px; }
+
+/* Кнопка войти */
+.form-content-button-logIn button { background: #0081EE; outline: none; height: 35px; cursor: pointer; transition: all .2s; width: 100%; border: none; color: #fff; font-size: 16px; font-weight: 500; border-radius: 10px; }
+
+/* Кнопка войти */
+.form-content-button-logIn button:hover { background: #005ba5; }
+
+/* Блок Кнопки регистрации */
+.form-content-button-reg { width: 80%; margin-top: 20px; }
+
+/* Кнопка регистрация */
+.form-content-button-reg button { background: var(--background); outline: none; height: 35px; cursor: pointer; transition: all .2s; width: 100%; border: 1px solid #0081EE; color: #0081EE; font-size: 16px; font-weight: 500; border-radius: 10px; }
+
+/* Кнопка регистрация */
+.form-content-button-reg button:hover { border: 1px solid #005ba5; background: #005ba5; color: #fff; }
+
+/* Блок Кнопки восстановления пароля */
+.form-content-button-req { font-size: 18px; width: 80%; margin-top: 10px; color: #0081EE; text-align: center; }
+
+/* Кнопка восстановления пароля */
+.form-content-button-req a { color: #0081EE; text-decoration: underline; }
+
+/* Кнопка восстановления пароля */
+.form-content-button-req a:hover { color: #005ba5; }
+
+/* Сообщение подсказка */
+.form-content-help-message { margin: 20px 0px; font-size: 16px; color: #a0a0a0; width: 80%; text-align: center; }
+
+/* Ошибки */
+.form-content-errors { width: 80%; margin-top: 10px; height: 20px; font-size: 14px; color: #FF7A00; }
+
+.form-content-errors p { padding: 0; margin: 0; }
+
+/* картинка формы */
+.reg-form-image { margin-top: 70px; margin-bottom: 30px; }
+
+/* текст формы */
+.reg-form-text { width: 85%; font-size: 19px; text-align: center; font-weight: 500; color: #0081EE; margin-bottom: 30px; }
+
+
+
+/******* Меню amechatsiteMenu *******/
+.amechatsiteMenu { background: var(--background); color: var(--color); box-shadow: 0px 0px 5px 0px var(--shadow-send-input); width: 80%; height: 100vh; font-size: 16px; font-weight: 600;  display: flex; align-items: center; flex-direction: column; position: fixed; top: 0; bottom: 0; right: -350px; z-index: 9000; transition: right .2s; }
+
+.amechatsiteMenu-head { width: 90%; height: 50px; display: flex; align-items: center; justify-content: flex-end; }
+
+.amechatsiteMenu-head i { color: #005ba5; font-size: 24px; cursor: pointer; }
+
+.amechatsiteMenu-head i:hover { color: #0081EE; }
+
+.amechatsiteMenu-user .left a { color: var(--link); }
+
+.amechatsiteMenu-user .right a { color: var(--color); }
+
+.amechatsiteMenu-night img, .amechatsiteMenu-user img { width: 19px; height: 19px; margin-right: 10px; }
+
+.amechatsiteMenu-night, .amechatsiteMenu-language, .amechatsiteMenu-user { width: 90%; height: 50px; display: flex; align-items: center; justify-content: space-between; }
+
+.amechatsiteMenu-night .left, .amechatsiteMenu-language .left, .amechatsiteMenu-user .left, .amechatsiteMenu-night .right, .amechatsiteMenu-language .right, .amechatsiteMenu-user .right { height: 100%; display: flex; align-items: center; }
+
+.amechatsiteMenu-language .right a { color: var(--link); }
+
+.amechatsiteMenu-link { width: 90%; height: 50px; display: flex; align-items: center; }
+
+.amechatsiteMenu-link a { color: var(--link); }
+
+.amechatsiteMenu-link-blue { display: flex; flex-direction: column; height: auto; position: absolute; bottom: 20px; align-items: flex-start; }
+
+.amechatsiteMenu-link-blue a { color: #0081EE; font-size: 13px; margin-bottom: 5px; }
+
+.amechatsiteMenuLanguage { background: var(--background); color: var(--color); box-shadow: 0px 0px 5px 0px var(--shadow-send-input); width: 80%; height: 100vh; font-size: 16px; font-weight: 600;  display: flex; align-items: center; flex-direction: column; position: fixed; top: 0; bottom: 0; right: -350px; z-index: 9001; transition: right .2s; }
+
+.amechatsiteMenuLanguage .amechatsiteMenu-head { justify-content: space-between; }
+
+
+
+/******* Кнопка button-shift *******/
+.button-shift { width: 28px; height: 12px; border-radius: 25px; background: #BDC1C6; position: relative; cursor: pointer; transition: all .2s; }
+
+.button-shift .button-shift-button { width: 16px; height: 16px; border: 1px solid #afafaf; border-radius: 25px; background: #FFFFFF; position: absolute; left: 0px; top: 0px; transform: translateY(-3px); }
+
+.button-shift-active { background: #005EAE; }
+
+.button-shift-active .button-shift-button { left: 14px; border: 1px solid #1A73E8; background: #1A73E8; }
+
+
+
+/******* Кнопка checkboxdiv *******/
+.checkboxdiv { display: flex; align-items: flex-start; justify-content: flex-start; }
+
+.checkboxdiv a { color: #1A73E8; }
+
+.checkboxdiv p { margin: 0; color: var(--color); }
+
+.checkboxdiv label { margin-top: 3px; height: 18px; cursor: pointer; }
+
+.checkboxdiv label { -moz-user-select: none; -ms-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+
+.checkboxborder { display: flex; align-items: center; justify-content: center; margin-right: 10px; min-width: 14px; max-width: 14px; height: 14px; background: var(--background); border: 2px solid #1A73E8; border-radius: .25rem; }
+
+.checkboxborderactive { width: 10px; height: 10px; background: #1A73E8; border-radius: 2px; transform: scale(0); transition: all .25s; }
+
+.checkboxborderactive-active { transform: scale(1); }
+
+.checkboxdiv input[type=checkbox] { position: absolute; opacity: 0; z-index: -1; }
+
+.errors { text-align: justify; display: inline-flex; line-height: 18px; text-align: justify; }
+
+.errorchecked { background: var(--background)!important; border: 2px solid #ff7257!important; }

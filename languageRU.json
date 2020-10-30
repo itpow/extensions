@@ -1,0 +1,47 @@
+{
+    "buttonMenuLogIn": "Вход",
+    "buttonLogIn": "Войти",
+    "buttonLogOut": "Выход",
+    "buttonRegistration": "Зарегистрироваться",
+    "buttonRecoveryPass": "Восстановление пароля",
+    "buttonRecoveryOk": "Ок",
+
+    "textUserLogOut": "Вы еще не вошли",
+    "textNight": "Ночной режим",
+    "textLanguage": "Язык",
+    "textLogInPageTitle": "Вход",
+    "textLogInPageRecovery": "Забыли пароль?",
+    "textRegistrtionPageTitle": "Регистрация",
+    "textRegistrtionPagePrivacyPolicyStart": "Я согласен с",
+    "textRegistrtionPagePrivacyPolicyAnd": "и",
+    "textRecoveryPageTitle": "Восстановление пароля",
+    "textRecoveryPageText": "На указанные адрес электронной почты придет сообщение для восстановление пароля",
+    "textRegistrationPageOkText": "На указанный адрес электронной почты было отправлено письмо для подтверждения регистрации",
+    "textRecoveryPageOkText": "Сообщение отправлено! Проверьте почту",
+
+    "placeholderSendMessage": "Введите сообщение",
+    "placeholderMail": "Почта",
+    "placeholderPass": "Пароль",
+    "placeholderRePass": "Повторите пароль",
+
+    "linkLogIn": "Вход",
+    "linkWhatTheAme": "Что такое Ame?",
+    "linkPrivacyPolicy": "Соглашение на обработку персональных данных",
+    "linkTermsOfUse": "Пользовательское соглашение",
+    "linkRecovery": "Восстановить",
+    "linkRegistrationPrivacyPolicy": "политикой обработки персональных данных",
+    "linkRegistrationTermsOfUse": "пользовательским соглашением",
+
+    "errorTextLogInPageNull": "Заполните все поля",
+    "errorTextLogInPageUser": "Неверный логин или пароль",
+    "errorTextRegistrtionPageNull": "Заполните все поля",
+    "errorTextRegistrtionPagePass": "Пароли не совпадают",
+    "errorTextRegistrtionPageExist": "Email уже зарегистрированн",
+    "errorTextRegistrtionPagePrivacyPolicy": "Чтобы зарегистрироваться, вы должны принять пользовательское соглашение и дать согласие на обработку персональных данных",
+    "errorTextRecoveryPageNull": "Введите почту, указанную в профиле",
+
+    "messageHi": "Чем могу Вам помочь ",
+
+    "languageNameRU": "Русский",
+    "languageNameEN": "Английский"
+}

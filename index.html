@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/assets/css/FontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/ame.css">
+  <link rel="stylesheet" href="/assets/css/quicktip.css">
+
+  <!-- scripts -->
+  <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/assets/js/quick_library/quick_library.js"></script>
+  <script type="text/javascript" src="/assets/js/ame.js" async></script>
+</head>
+<body>
+  
+  <!-- Чат бот -->
+  <div class="amechatsite quickTip-bot quickTip-end" id="amechatsitemain">
+
+    <!-- Шапка -->
+    <div class="amechatsiteHead amechatsiteHead-main">
+
+      <img src="assets/img/logo_ame.png" class="chatBotPage" alt="Ame" style="width: 91px;">
+
+      <div class="amechatbtnlogin">
+        <button type="button" class="amechatbtnloginloginBt btLogInPage buttonMenuLogIn">Вход</button>
+        <div type="button" class="amechatbtnMenu"></div>
+      </div>
+    </div>
+
+    <div class="amechatsiteMsgs"></div>
+
+    <div class="amechatsiteField quickTip-input">
+      <input class="amechatsiteFieldInput placeholderSendMessage" placeholder="Введите сообщение" autofocus>
+      <div class="amechatsiteFieldSend"></div>
+    </div>
+
+    <div class="amechatsiteButton"></div>
+  </div>
+
+  <!-- Меню -->
+  <div class="amechatsiteMenu">
+    <div class="amechatsiteMenu-head"><i class="fas fa-times amechatsiteMenu-closeMenu"></i></div>
+    <div class="amechatsiteMenu-user quickTip-user"></div>
+    <div class="amechatsiteMenu-night quickTip-night">
+      <div class="left"><img src="assets/img/Moon.png" alt="Moon"> <span class="textNight">Ночной режим</span></div>
+      <div class="right">
+        <div class="button-shift">
+          <div class="button-shift-button"></div>
+        </div>
+      </div>
+    </div>
+    <div class="amechatsiteMenu-language quickTip-language">
+      <div class="left"><span class="textLanguage">Язык</span></div>
+      <div class="right"><a href="#" class="amechatbtnMenuLanguage">RU/EN</a></div>
+    </div>
+    <div class="amechatsiteMenu-link"><a href="#" class="btn-tooltip linkWhatTheAme">Что такое Ame?</a></div>
+    <div class="amechatsiteMenu-link amechatsiteMenu-link-blue">
+      <a target="_blank" href="https://law.ame.im/agreement_ame_rus.pdf" class="linkPrivacyPolicy">Соглашение на обработку персональных данных</a>
+      <a target="_blank" href="https://law.ame.im/user_ame_rus.pdf" class="linkTermsOfUse">Пользовательское соглашение</a>
+    </div>
+  </div>
+
+  <!-- Меню Язык -->
+  <div class="amechatsiteMenuLanguage">
+    <div class="amechatsiteMenu-head">
+      <i class="fa fa-chevron-left amechatsiteMenuLanguage-closeMenu" aria-hidden="true"></i>
+    </div>
+
+    <div class="amechatsiteMenu-language">
+      <div class="left"><span class="textLanguage">Язык</span></div>
+      <div class="right"></div>
+    </div>
+
+    <div class="amechatsiteMenu-link"><a href="#" class="linkLanguageRU">RU - <span class="languageNameRU">Русский</span></a></div>
+    <div class="amechatsiteMenu-link"><a href="#" class="linkLanguageEN">EN - <span class="languageNameEN">Английский</span></a></div>
+  </div>
+
+  <!-- форма фхода -->
+  <div class="login-form">
+
+    <!-- Шапка -->
+    <div class="amechatsiteHead amechatsiteHead-reg">
+
+      <i class="fa fa-chevron-left chatBotPage" aria-hidden="true"></i>
+
+      <img src="assets/img/logo_ame.png" class="chatBotPage" alt="Ame" style="width: 91px;">
+
+      <div class="amechatbtnlogin">
+        <div type="button" class="amechatbtnMenu"></div>
+      </div>
+    </div>
+
+    <div class="form-content">
+          
+      <h3 class="form-content-title textLogInPageTitle">Вход</h3>
+
+      <!-- Логин -->
+      <div class="form-content-input-text">
+        <input type="text" name="security_login" id="field-email" class="placeholderMail" placeholder="Почта">
+      </div>
+
+      <!-- Пароль -->
+      <div class="form-content-input-text">
+        <input type="password" name="security_password" id="field-password" class="placeholderPass" placeholder="Пароль">
+      </div>
+
+      <!-- Ошибки -->
+      <div class="form-content-errors errors"></div>
+
+      <!-- Кнопка войти -->
+      <div class="form-content-button-logIn">
+        <button type="button" id="btnLogin" class="buttonLogIn">Войти</button>          
+      </div>
+
+      <!-- Кнопка регистрации -->
+      <div class="form-content-button-reg">
+        <button type="button" id="btnRegPage" class="buttonRegistration">Зарегистрироваться</button>
+      </div>
+      
+      <div class="form-content-button-req">
+        <span class="textLogInPageRecovery">Забыли пароль?</span> 
+        <a href="#" type="button" id="recoveryPage" class="linkRecovery">Восстановить</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Форма регистрации -->
+  <div class="reg-form">
+
+    <!-- Шапка -->
+    <div class="amechatsiteHead amechatsiteHead-reg">
+
+      <i class="fa fa-chevron-left btLogInPage" aria-hidden="true"></i>
+
+      <img src="assets/img/logo_ame.png" class="chatBotPage" alt="Ame" style="width: 91px;">
+
+      <div class="amechatbtnlogin">
+        <div type="button" class="amechatbtnMenu"></div>
+      </div>
+    </div>
+
+    <div class="form-content">  
+
+      <h3 class="form-content-title textRegistrtionPageTitle">Регистрация</h3>
+
+      <!-- Поле почта -->
+      <div class="form-content-input-text">
+        <input type="text" name="registration_login" id="field-email-reg" class="placeholderMail" placeholder="Почта">
+      </div>
+
+      <!-- Поле пароль -->
+      <div class="form-content-input-text">
+          <input type="password" name="registration_password" id="field-password-reg" class="placeholderPass" placeholder="Пароль">
+      </div>
+
+      <!-- Поле повторить пароль -->
+      <div class="form-content-input-text">
+        <input type="password" name="registration_password-again" id="field-password-again-reg" class="placeholderRePass" placeholder="Повторите пароль">
+      </div>
+
+      <!-- Проверка -->
+      <div class="form-content-text checkboxdiv">
+        <label class="" for="checkbox-input">
+            <div id="checkbox-input-checkboxborder" class="checkboxborder">
+                <div id="checkbox-input-checkboxborderactive" class="checkboxborderactive"></div>
+            </div>
+        </label>
+        <input id="checkbox-input" type="checkbox">
+        <p>
+          <span class="textRegistrtionPagePrivacyPolicyStart">Я согласен с </span>
+          <a class="linkRegistrationPrivacyPolicy" target="_blank" href="https://law.ame.im/agreement_ame_rus.pdf">политикой обработки персональных данных</a> 
+          <span class="textRegistrtionPagePrivacyPolicyAnd"> и </span> 
+          <a class="linkRegistrationTermsOfUse" target="_blank" href="https://law.ame.im/user_ame_rus.pdf">пользовательским соглашением</a>
+        </p>
+      </div>
+
+      <!-- Кнопка регистрации -->
+      <div class="form-content-button-reg">
+        <button type="button" id="btnReg" class="buttonRegistration">Зарегистрироваться</button>                 
+      </div>
+
+      <!-- Ошибки -->
+      <div class="form-content-errors errors-reg"></div>
+    </div>
+  </div>
+
+  <!-- Форма восставновления пароля -->
+  <div class="recovery-form">
+
+    <!-- Шапка -->
+    <div class="amechatsiteHead amechatsiteHead-reg">
+
+      <i class="fa fa-chevron-left btLogInPage" aria-hidden="true"></i>
+
+      <img src="assets/img/logo_ame.png" class="chatBotPage" alt="Ame" style="width: 91px;">
+
+      <div class="amechatbtnlogin">
+        <div type="button" class="amechatbtnMenu"></div>
+      </div>
+    </div>
+
+    <div class="form-content">
+
+      <h3 class="form-content-title buttonRecoveryPass">Восстановление пароля</h3>
+
+      <!-- Поле почта -->
+      <div class="form-content-input-text">
+        <input type="text" id="field-email-recovery" class="placeholderMail" placeholder="Ваша почта">
+      </div>
+
+      <!-- Ошибки -->
+      <div class="form-content-errors errors-recovery"></div>
+
+      <div class="form-content-help-message textRecoveryPageText">На указанные адрес электронной почты придет сообщение для восстановление пароля</div>
+
+      <!-- Кнопка Восстановить -->
+      <div class="form-content-button-reg">
+        <button type="button" id="btnRecoveryPass" class="buttonRecoveryPass">Восстановление пароля</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Сообщение о успешной регистрации -->
+  <div class="reg-form-ok">
+
+    <!-- Шапка -->
+    <div class="amechatsiteHead amechatsiteHead-reg">
+
+      <img src="assets/img/logo_ame.png" class="chatBotPage" alt="Ame" style="width: 91px;">
+
+      <div class="amechatbtnlogin">
+        <div type="button" class="amechatbtnMenu"></div>
+      </div>
+    </div>
+
+    <img src="assets/img/Mail.png" class="chatBotPage reg-form-image">
+
+    <div class="reg-form-text" class="textRegistrationPageOkText">На указанный адрес электронной почты было отправлено письмо для подтверждения регистрации</div>
+
+    <!-- Кнопка ОК -->
+    <div class="form-content-button-logIn">
+      <button type="button" class="btLogInPage buttonRecoveryOk">Ок</button>
+    </div>
+
+    <!-- Кнопка Открыть почтовый ящик -->
+    <!-- <div class="form-content-button-req"><a href="#" type="button">Открыть почтовый ящик</a></div> -->
+  </div>
+
+  <!-- Сообщение о восстановлении -->
+  <div class="recovery-form-ok">
+
+    <!-- Шапка -->
+    <div class="amechatsiteHead amechatsiteHead-reg">
+
+      <img src="assets/img/logo_ame.png" class="chatBotPage" alt="Ame" style="width: 91px;">
+
+      <div class="amechatbtnlogin">
+        <div type="button" class="amechatbtnMenu"></div>
+      </div>
+    </div>
+
+    <img src="assets/img/Ok.png" class="chatBotPage reg-form-image">
+
+    <div class="reg-form-text textRecoveryPageOkText" style="font-size: 24px;">Сообщение отправлено! Проверьте почту</div>
+
+    <!-- Кнопка ОК -->
+    <div class="form-content-button-logIn">
+      <button type="button" class="btLogInPage buttonRecoveryOk">Ок</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+    "buttonMenuLogIn": "Log In",
+    "buttonLogIn": "Log In",
+    "buttonLogOut": "Log Out",
+    "buttonRegistration": "Registrtion",
+    "buttonRecoveryPass": "Recovery",
+    "buttonRecoveryOk": "Ok",
+
+    "textUserLogOut": "You are not logged",
+    "textNight": "Night",
+    "textLanguage": "Language",
+    "textLogInPageTitle": "Log In",
+    "textLogInPageRecovery": "Forgot your password?",
+    "textRegistrtionPageTitle": "Registrtion",
+    "textRegistrtionPagePrivacyPolicyStart": "I agree with",
+    "textRegistrtionPagePrivacyPolicyAnd": "and",
+    "textRecoveryPageTitle": "Recovery password",
+    "textRecoveryPageText": "A password recovery message will be sent to the indicated email address",
+    "textRegistrationPageOkText": "An email was sent to the specified email address to confirm registration",
+    "textRecoveryPageOkText": "Message sent! Check mail",
+
+    "placeholderSendMessage": "Enter your message",
+    "placeholderMail": "Email",
+    "placeholderPass": "Password",
+    "placeholderRePass": "Confirm password",
+
+    "linkLogIn": "Log In",
+    "linkWhatTheAme": "What is Ame?",
+    "linkPrivacyPolicy": "The Privacy policy",
+    "linkTermsOfUse": "The User agreement",
+    "linkRecovery": "Recovery",
+    "linkRegistrationPrivacyPolicy": "the privacy policy",
+    "linkRegistrationTermsOfUse": "user agreement",
+
+    "errorTextLogInPageNull": "Fill in all the fields",
+    "errorTextLogInPageUser": "Wrong login or password",
+    "errorTextRegistrtionPageNull": "Fill in all the fields",
+    "errorTextRegistrtionPagePass": "Password mismatch",
+    "errorTextRegistrtionPageExist": "Email is already registered",
+    "errorTextRegistrtionPagePrivacyPolicy": "To register, you must accept the user agreement and consent to the processing of personal data",
+    "errorTextRecoveryPageNull": "Enter the mail specified in the profile",
+
+    "messageHi": "How can I help you ",
+
+    "languageNameRU": "Russia",
+    "languageNameEN": "English"
+}
