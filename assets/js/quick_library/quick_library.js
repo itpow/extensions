@@ -411,7 +411,7 @@
                             
                             initBlocks();
                             setBlocksTarget(objectCoordinate);
-                            renderBlocks();
+                            // renderBlocks();
                         }
                         
                         if(!this.tailActive && blocksRender) destroyTail();

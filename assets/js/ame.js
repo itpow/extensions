@@ -421,7 +421,7 @@
                 `;
 
                 let template = `
-                    <div class="quick_tip_block">
+                    <div class="quick_tip_block" style="box-shadow: 5px 5px 10px 2px black;">
 
                         <!-- Хвостик темплейта -->
                         <div id="quickTip_tail" class="quick_tip_tail"></div>
