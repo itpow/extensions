@@ -64,7 +64,7 @@
         QuickTip.prototype.blocksZ = "9900";
 
         // Время задержки перехода
-        QuickTip.prototype.delay = 200;
+        QuickTip.prototype.delay = 100;
 
         // Время ожидания шага
         QuickTip.prototype.errorTimeout = 4;
@@ -409,8 +409,8 @@
                         
                         if(this.blocksActive) {
                             
-                            initBlocks();
-                            setBlocksTarget(objectCoordinate);
+                            // initBlocks();
+                            // setBlocksTarget(objectCoordinate);
                             // renderBlocks();
                         }
                         
@@ -749,7 +749,12 @@
                     else {
 
                         tailTopBool = true; tailBottomBool = false; 
-            
+                        
+                        console.log(coordinateObject.OffsetTop);
+                        console.log(coordinateObject.height);
+                        console.log(that.MARGIN_OBJECT);
+                        console.log(that.offset.top);
+                        
                         template.style.top = coordinateObject.OffsetTop + coordinateObject.height + that.MARGIN_OBJECT * 2 + that.offset.top + "px";
                     }
 
